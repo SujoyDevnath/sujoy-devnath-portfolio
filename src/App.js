@@ -23,6 +23,8 @@ import About from './Pages/About/About';
 import Projects from './Pages/Projects/Projects';
 import Contact from './Pages/Contact/Contact';
 import Sidebar from './Components/Sidebar/Sidebar';
+import Blogs from './Pages/Blogs/Blogs';
+import ProjectDetails from './Pages/ProjectDetails/ProjectDetails';
 
 function App(props) {
   const drawerWidth = 300;
@@ -114,6 +116,12 @@ function App(props) {
             </Route>
             <Route path="/projects">
               <Projects></Projects>
+            </Route>
+            <Route path="/projectDetails/:projectID">
+              <ProjectDetails></ProjectDetails>
+            </Route>
+            <Route path="/blogs">
+              <Blogs></Blogs>
             </Route>
             <Route path="/contact">
               <Contact></Contact>

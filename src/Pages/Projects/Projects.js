@@ -1,6 +1,7 @@
 import { Button, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import './project.css';
 
 const Projects = () => {
@@ -28,7 +29,7 @@ const Projects = () => {
                                             alt={title}
                                         />
                                         <CardContent sx={{ background: '#1a1a1a', color: 'white' }}>
-                                            <Typography gutterBottom variant="h5" component="div">
+                                            <Typography gutterBottom variant="h5" sx={{ fontWeight: 'bold' }} component="div">
                                                 {title}
                                             </Typography>
                                             <Typography variant="body2">
@@ -36,8 +37,9 @@ const Projects = () => {
                                             </Typography>
                                             <Box className="project-btn-container">
                                                 <a href={liveSite} target="_blank"><Button className="project-btn">Live Site</Button></a>
-                                                <a href={clientCode} target="_blank"><Button className="project-btn">Client Code</Button></a>
-                                                <a href={serverCode} target="_blank"><Button className="project-btn">Server Code</Button></a>
+                                                <NavLink to={`/projectDetails/${id}`}><Button className="project-btn">Details</Button></NavLink>
+                                                {/* <a href={clientCode} target="_blank"><Button className="project-btn">Client Code</Button></a>
+                                                <a href={serverCode} target="_blank"><Button className="project-btn">Server Code</Button></a> */}
                                             </Box>
                                         </CardContent>
                                     </CardActionArea>

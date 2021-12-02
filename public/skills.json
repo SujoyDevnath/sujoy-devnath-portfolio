@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Html / Css",
+        "percentage": "80"
+    },
+    {
+        "name": "Material Ui",
+        "percentage": "60"
+    },
+    {
+        "name": "React",
+        "percentage": "60"
+    },
+    {
+        "name": "Node Js",
+        "percentage": "65"
+    },
+    {
+        "name": "Express Js",
+        "percentage": "70"
+    },
+    {
+        "name": "MongoDb",
+        "percentage": "80"
+    }
+]

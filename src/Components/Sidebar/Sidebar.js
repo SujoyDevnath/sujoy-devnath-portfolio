@@ -22,16 +22,19 @@ const Sidebar = () => {
                 <Button sx={{ width: '100%' }} className="btn">Resume</Button>
             </a>
             <NavLink to="home" className="btn">
-                <Button sx={{ color: 'white' }}>Home</Button>
+                <Button sx={{ color: 'white', height: '100%', width: '100%' }}>Home</Button>
             </NavLink>
             <NavLink to="about" className="btn">
-                <Button sx={{ color: 'white' }}>About Me</Button>
+                <Button sx={{ color: 'white', height: '100%', width: '100%' }}>About Me</Button>
             </NavLink>
             <NavLink to="projects" className="btn">
-                <Button sx={{ color: 'white' }}>Projects</Button>
+                <Button sx={{ color: 'white', height: '100%', width: '100%' }}>Projects</Button>
+            </NavLink>
+            <NavLink to="blogs" className="btn">
+                <Button sx={{ color: 'white', height: '100%', width: '100%' }}>Blogs</Button>
             </NavLink>
             <NavLink to="contact" className="btn">
-                <Button sx={{ color: 'white' }}>Contact</Button>
+                <Button sx={{ color: 'white', height: '100%', width: '100%' }}>Contact</Button>
             </NavLink>
         </Box>
     );
